@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Mario";
+  src: url("./MarioFont.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
