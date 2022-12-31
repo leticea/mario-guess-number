@@ -23,8 +23,22 @@ const init = () => {
   updateData(gameNumberElement, "?");
   gameGuessElement.value = "";
   gameHealthElement.style.background = "green";
-  gameHealthElement.style.width =
-
-
+  gameHealthElement.style.width = `${gameHealth}%`;
 };
+
+init();
+
+const playGame = () => {
+  const guess = Number(gameGuessElement.value);
+  if (!gameOver) {
+    if (guess <= 0) {
+      updateData(gameFeedbackElement, "Enter a valid number!");
+
+    } else if (guess == randomGuessNumber) {
+      gameNumberElement.textContent = randomGuessNumber;
+      updateData(gameFeedbackElement, "You win!");
+    }
+  }
+};
+
 
