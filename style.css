@@ -8,3 +8,14 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: 'Mario', sans-serif;
+  color: #fff;
+  background-color: #090909;
+  text-shadow: 2px 2px #090909;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  line-height: 1.5;
+}
