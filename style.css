@@ -19,3 +19,14 @@ body {
   height: 100vh;
   line-height: 1.5;
 }
+
+.game {
+  max-width: 440px;
+  display: grid;
+  align-items: center;
+  gap: 50px;
+  padding: 75px 25px;
+  background: url("images/bg.jpg");
+  background-size: cover;
+  text-align: center;
+}
