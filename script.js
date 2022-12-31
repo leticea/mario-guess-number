@@ -37,6 +37,16 @@ const playGame = () => {
     } else if (guess == randomGuessNumber) {
       gameNumberElement.textContent = randomGuessNumber;
       updateData(gameFeedbackElement, "You win!");
+
+    } else if (guess !== randomGuessNumber) {
+      if (gameHealth > 20) {
+        updateData(
+          gameFeedbackElement, guess > randomGuessNumber ? "Try a lower number!" : "Try a higher number!"
+        );
+        gameHealth -= 20;
+        gameHealthElement.style.width = `${gameHealth}%`;
+        updateData(gameHealthNumberElement, `${gameHealth}%`);
+      }
     }
   }
 };
