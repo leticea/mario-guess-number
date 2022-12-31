@@ -98,14 +98,10 @@ input, button {
   cursor: pointer;
 }
 
+.game-button-play {
+  background-color: green;
+}
 
-
-
-
-
-
-
-
-
-
-
+.game-button-reset {
+  background-color: blue;
+}
