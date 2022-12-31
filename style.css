@@ -79,6 +79,30 @@ body {
   gap: 10px;
 }
 
+input, button {
+  background: none;
+  font: inherit;
+  color: inherit;
+  border: none;
+}
+
+.game-guess {
+  grid-column: 1/-1;
+  padding: 5px;
+  border: 2px solid #fff;
+}
+
+.game-button {
+  padding: 10px 15px;
+  box-shadow: 5px 5px #090909;
+  cursor: pointer;
+}
+
+
+
+
+
+
 
 
 
