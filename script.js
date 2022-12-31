@@ -46,9 +46,24 @@ const playGame = () => {
         gameHealth -= 20;
         gameHealthElement.style.width = `${gameHealth}%`;
         updateData(gameHealthNumberElement, `${gameHealth}%`);
+
+        if (gameHealth < 50) {
+          gameHealthElement.style.background = "red";
+        }
+
+      } else {
+        updateData(gameFeedbackElement, "Game over!");
+        gameHealth = 0;
+        gameHealthElement.style.width = `${gameHealth}%`;
+        updateData(gameHealthNumberElement, "0%");
+        gameOver = true;
       }
     }
+
+  } else {
+    updateData(gameFeedbackElement, "Reset to play again!");
   }
 };
 
-
+gamePlayBtn.addEventListener("click", playGame);
+gameResetBtn.addEventListener("click", init);
