@@ -47,6 +47,29 @@ body {
   font-size: 10px;
 }
 
+.game-health-bar {
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+.game-title {
+  font-size: 24px;
+}
+
+.game-number {
+  display: grid;
+  place-items: center;
+  width: 75px;
+  height: 75px;
+  font-size: 32px;
+  color: #ce4b05;
+  margin: 20px auto;
+  background: url("images/box.png");
+  background-size: cover;
+}
+
+
 
 
 
