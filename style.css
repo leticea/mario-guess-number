@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Mario', sans-serif;
+  font-family: "Mario", sans-serif;
   color: #fff;
   background-color: #090909;
   text-shadow: 2px 2px #090909;
@@ -79,7 +79,8 @@ body {
   gap: 10px;
 }
 
-input, button {
+input,
+button {
   background: none;
   font: inherit;
   color: inherit;

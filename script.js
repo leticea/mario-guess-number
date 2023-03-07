@@ -33,15 +33,16 @@ const playGame = () => {
   if (!gameOver) {
     if (guess <= 0) {
       updateData(gameFeedbackElement, "Enter a valid number!");
-
     } else if (guess == randomGuessNumber) {
       gameNumberElement.textContent = randomGuessNumber;
       updateData(gameFeedbackElement, "You win!");
-
     } else if (guess !== randomGuessNumber) {
       if (gameHealth > 20) {
         updateData(
-          gameFeedbackElement, guess > randomGuessNumber ? "Try a lower number!" : "Try a higher number!"
+          gameFeedbackElement,
+          guess > randomGuessNumber
+            ? "Try a lower number!"
+            : "Try a higher number!"
         );
         gameHealth -= 20;
         gameHealthElement.style.width = `${gameHealth}%`;
@@ -50,7 +51,6 @@ const playGame = () => {
         if (gameHealth < 50) {
           gameHealthElement.style.background = "red";
         }
-
       } else {
         updateData(gameFeedbackElement, "Game over!");
         gameHealth = 0;
@@ -59,7 +59,6 @@ const playGame = () => {
         gameOver = true;
       }
     }
-
   } else {
     updateData(gameFeedbackElement, "Reset to play again!");
   }
